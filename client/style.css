@@ -6,16 +6,16 @@
   box-sizing: border-box;
   font-family: "Noto Sans" ,sans-serif;
 }
-
 body {
   background: #343541;
+  width: 100vw;
 }
 
 #intro h1{
-  color:burlywood;
+  color:#dcdcdc;
   text-align: center;
   padding: 1rem 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 #intro p{
   color: white;
@@ -27,8 +27,8 @@ p::first-letter{
   font-size: 2rem;
 }
 #intro span{
-  font-size: 1.2rem;
-  color: aquamarine;
+  font-size: 20px;
+  color:turquoise;
 }
 #app {
   width: 100vw;
@@ -92,6 +92,7 @@ p::first-letter{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .ai .profile {
@@ -130,11 +131,14 @@ form {
   margin: 0 auto;
   padding: 10px;
   background: #40414F;
-
   display: flex;
   flex-direction: row;
   gap: 10px;
   border-radius: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 textarea {
@@ -148,14 +152,24 @@ textarea {
   outline: none;
 }
 
-button {
-  outline: 0;
-  border: 0;
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
   cursor: pointer;
-  background: transparent;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
 }
 
 form img {
   width: 30px;
   height: 30px;
 }
+
+/* Media queries for specific screen sizes */
