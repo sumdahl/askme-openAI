@@ -85,7 +85,7 @@ const handleSubmit = async(e) => {
 
   //fetch data from server, bot response
 
-  const respone = await fetch('http://localhost:5000',{
+  const respone = await fetch('https://askme-z9tb.onrender.com/',{
     method:'POST',
     headers: {
       'Content-Type': 'application/json',
